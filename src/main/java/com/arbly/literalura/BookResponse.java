@@ -1,0 +1,9 @@
+package com.arbly.literalura;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.util.List;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public record BookResponse(int count, String next, String previous, List<Book> results) {
+}
