@@ -1,39 +1,62 @@
 package com.arbly.literalura;
 
 import com.arbly.literalura.service.LivroService;
+import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
 
+import static com.arbly.literalura.Ascii.*;
+
 public class LiterMenu {
-    private String menu = """
+
+    private final AutorRepository repository;
+
+    public LiterMenu(AutorRepository repository) {
+        this.repository = repository;
+    }
+
+    public void start() {
+        Scanner sc = new Scanner(System.in);
+        LivroService livroService = new LivroService(repository);
+
+        System.out.println(CLEAR_CONSOLE);
+        System.out.println(LOGO);
+        System.out.println(ABOUT);
+
+        while (true){
+            String menu = """
+                    
                     1 - Buscar livro por título (api)
                     2 - Listar livros cadastrados
                     3 - Listar autores cadastrados
                     4 - Listar autores vivos em determinado ano
                     5 - Listar livros cadastrados em determinado idioma
                     9 - Sair""";
-
-    public void start() {
-        Scanner sc = new Scanner(System.in);
-        LivroService livroService = new LivroService();
-
-        while (true){
             System.out.println(menu);
+            System.out.print("\nDigite uma opção: ");
             var input = sc.nextLine();
 
             if (input.equals("9")) break;
 
             switch (input){
+                case "cl":
+                    System.out.println(CLEAR_CONSOLE);
+                    System.out.println(LOGO);
+                    break;
                 case "1":
-                    livroService.BuscarTituloApi();
+                    livroService.buscarTituloApi();
                     break;
                 case "2":
+                    livroService.listarLivros();
                     break;
                 case "3":
+                    livroService.listarAutores();
                     break;
                 case "4":
+                    livroService.autoresVivos();
                     break;
                 case "5":
+                    livroService.livrosIdioma();
                     break;
             }
         }

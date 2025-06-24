@@ -8,7 +8,6 @@ import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record Book(
-        int id,
         String title,
         List<Author> authors,
         /*List<String> summaries,*/
