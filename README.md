@@ -12,7 +12,6 @@
 Desafio proposto no curso Java da Alura Latam em parceria com a
 Oracle Next Education - ONE. Grupo G8 (2025).
 
-
 ## Objetivo
 
 Desenvolver um aplicativo em Java com _interface_ via terminal para consulta de livros. Para isso
@@ -26,8 +25,10 @@ em um banco de dados relacional. No caso foi utilizado o Postgres em nuvem [Neon
 * Maven
 * Postgres 
 
-## Uso
+## Screenshoots
 
+![screen1](/assets/images/literalura-scr1.png)
+![screen1](/assets/images/literalura-scr2.png)
 
 
 ## Dependências
@@ -36,20 +37,20 @@ Todas as dependencias são gerenciadas pelo Maven.
 
 ## Variáveis de ambiente
 
-O arquivo application.properties utiliza variáveis de ambiente que precisam ser setadas com os dados do DB.
-Substitua os valores conforme os dados da sua instância.
+O arquivo _application.properties_ utiliza variáveis de ambiente que precisam ser setadas com os dados do DB.
+Substitua os valores conforme os dados da instância.
 
 Windows PowerShell:
 ```
-$env:LITEALURA_DATASOURCE="jdbc:postgresql://servidor-db/nome-db"
-$env:LITEALURA_USERNAME="NOME_DE_USUARIO"
-$env:LITEALURA_PASSWORD="SENHA"
+$env:LITERALURA_DATASOURCE="jdbc:postgresql://servidor-db/nome-db"
+$env:LITERALURA_USERNAME="NOME_DE_USUARIO"
+$env:LITERALURA_PASSWORD="SENHA"
 ```
 
 Linux:
 ```
-export LITEALURA_DATASOURCE="jdbc:postgresql://servidor-db/nome-db"
-export LITEALURA_USERNAME="NOME_DE_USUARIO"
-export LITEALURA_PASSWORD="SENHA"
+export LITERALURA_DATASOURCE="jdbc:postgresql://servidor-db/nome-db"
+export LITERALURA_USERNAME="NOME_DE_USUARIO"
+export LITERALURA_PASSWORD="SENHA"
 ```
 

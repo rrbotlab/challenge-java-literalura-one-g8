@@ -1,4 +1,4 @@
-package com.arbly.literalura;
+package com.arbly.literalura.model;
 
 import jakarta.persistence.*;
 

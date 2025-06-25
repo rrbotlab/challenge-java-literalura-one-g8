@@ -1,4 +1,4 @@
-package com.arbly.literalura;
+package com.arbly.literalura.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

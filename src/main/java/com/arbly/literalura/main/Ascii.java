@@ -1,4 +1,4 @@
-package com.arbly.literalura;
+package com.arbly.literalura.main;
 
 public class Ascii {
     public static final String CLEAR_CONSOLE = "\033[H\033[2J";
@@ -33,15 +33,8 @@ public class Ascii {
     public static final String ABOUT = ANSI_BLUE + """
                 Challenge Literalura
                 Alura Latam & Oracle Next Education - ONE - G8
-                ©2025 Ricardo G http://github.com/rrbotlab/challenge-literalura-one-g8
+                ©2025 Ricardo G http://github.com/rrbotlab/challenge-java-literalura-one-g8
                 Version 1.0.0
                 """ + ANSI_RESET;
-
-    public static void clear(){
-            System.out.print("\033[H\033[2J");
-            System.out.flush();
-    }
-
-
 
 }

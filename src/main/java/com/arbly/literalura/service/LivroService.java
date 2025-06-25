@@ -1,9 +1,9 @@
 package com.arbly.literalura.service;
 
-import com.arbly.literalura.Autor;
-import com.arbly.literalura.AutorRepository;
-import com.arbly.literalura.BookResponse;
-import com.arbly.literalura.Titulo;
+import com.arbly.literalura.model.Autor;
+import com.arbly.literalura.repository.AutorRepository;
+import com.arbly.literalura.model.BookResponse;
+import com.arbly.literalura.model.Titulo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

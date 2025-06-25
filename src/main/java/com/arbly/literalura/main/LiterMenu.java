@@ -1,11 +1,11 @@
-package com.arbly.literalura;
+package com.arbly.literalura.main;
 
+import com.arbly.literalura.repository.AutorRepository;
 import com.arbly.literalura.service.LivroService;
-import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
 
-import static com.arbly.literalura.Ascii.*;
+import static com.arbly.literalura.main.Ascii.*;
 
 public class LiterMenu {
 

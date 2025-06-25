@@ -1,11 +1,11 @@
 package com.arbly.literalura;
 
+import com.arbly.literalura.main.LiterMenu;
+import com.arbly.literalura.repository.AutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.awt.*;
 
 @SpringBootApplication
 public class LiteraluraApplication implements CommandLineRunner {
